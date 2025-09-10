@@ -1,4 +1,4 @@
-const User=require("./models/User");
+const User=require("./models/citizen");
 const Complaint=require("./models/Complaint");
 const AuditSchema=require("./models/auditLog");
 
