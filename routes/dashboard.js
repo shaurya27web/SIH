@@ -8,3 +8,5 @@ router.get("/dashboard",isLoggedIn,dashboardController.dashboard);
 router.get("dashboard/notifications",isLoggedIn,dashboardController.notifications);
 router.get("dashboard/trendingTopics",dashboardController.trendingTopics);
 router.get("dashboard/FAQs",dashboardController.faqs);
+
+module.exports = router;

@@ -10,3 +10,5 @@ router.get("/GovernmentOfficer",homepageController.governmentOfficer);
 router.post("/Regulator",homepageController.regulatorPost);
 router.post("/Citizen",homepageController.citizenPost);
 router.post("/GovernmentOfficer",homepageController.governmentOfficer);
+
+module.exports = router;

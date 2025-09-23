@@ -43,3 +43,5 @@ router.get("/upVote",citizenController.upvote);
 router.post("/upVote",citizenController.upvote);
 
 router.delete("/account/delete",validatecitizen,citizenController.deleteAccount);
+
+module.exports = router;

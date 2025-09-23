@@ -20,3 +20,6 @@ router.post("/report",regulatorController.postreport);
 router.post("/audit",regulatorController.postaudit);
 
 router.get("/logout",regulatorController.postlogout);
+
+
+module.exports = router;

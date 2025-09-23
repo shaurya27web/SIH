@@ -49,3 +49,5 @@ router.post("/forgot-password/sms", authController.forgotPasswordSMS);
 router.post("/reset-password/:token", authController.resetPasswordSubmit);
 
 router.post("/logout", authController.logout);
+
+module.exports = router;

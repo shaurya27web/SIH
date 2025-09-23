@@ -28,3 +28,4 @@ router.post("user/:id",complaintController.allComplaintUserPost);
 router.post("/all",complaintController.allComplaintAdminPost);
 
 
+module.exports = router;

@@ -19,4 +19,6 @@ router.post("/officerDashboard",governmentOfficerController.postdashboard);
 router.post("/summaries",governmentOfficerController.postsummaries);
 router.post("/commentCluster",governmentOfficerController.postclusters);
 router.post("/officerManagement",governmentOfficerController.postOfficermanagement);
-router.post("/logout",governmentOfficerController.postlogout)
+router.post("/logout",governmentOfficerController.postlogout);
+
+module.exports = router;
