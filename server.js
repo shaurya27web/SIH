@@ -1,13 +1,45 @@
 // server.js
 const express = require("express");
+const app = express();
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const cors = require("cors");
 const flash = require("flash");
+const passport=require("passport");
+const LocalStrategy=require("passport-local");
+const cookieParser = require("cookie-parser");
+const session = require("express-session");
 
 dotenv.config();
 
-const app = express();
+app.use(cors({
+  origin: "http://localhost:5173", 
+  credentials: true                 
+}));
+
+
+app.use(cookieParser("MySecret")); 
+
+const sessionOptions={
+    secret:"MySecret",
+    resave:false,
+    saveUninitialized:false,
+    cookie: {
+        expires: Date.now()+5*24*60*60*1000,
+        maxAge:5*24*60*60*1000,
+    }
+}
+
+app.use(session(sessionOptions));
+app.use(flash());
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new LocalStrategy(User.authenticate()));
+
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+
+
 
 app.use(express.json());
 app.use(cors());
