@@ -94,17 +94,17 @@ Unlike basic sentiment analysis tools, Lok Netra:
 ---
 
 ##  Getting Started
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-repo/LokNetra.git
-   cd LokNetra
-Install dependencies:
+# 1. Clone the repository
+git clone https://github.com/your-repo/LokNetra.git
+cd LokNetra
+
+# 2. Install backend dependencies
 pip install -r requirements.txt
 
-Run the backend:
+# 3. Run the backend
 python app.py
 
-Launch the dashboard:
+# 4. Setup and launch the dashboard
 cd dashboard
 npm install
 npm start
