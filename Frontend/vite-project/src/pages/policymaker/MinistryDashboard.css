@@ -1,0 +1,164 @@
+/* Full page layout */
+.ministry-dashboard {
+  width: 100%;
+  min-height: 100vh;
+  background: #f9fafb;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Filters */
+.filter-row {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.filter-row select {
+  flex: 1;
+  min-width: 150px;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+.filter-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Search + Modes */
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.summary-header input {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+.view-modes {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.mode-btn {
+  padding: 0.4rem 0.9rem;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+  background: #064b91;
+  cursor: pointer;
+}
+.mode-btn.active {
+  background: #2563eb;
+  color: white;
+  border: none;
+}
+
+/* Summaries */
+.summaries {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  color:"blue"
+}
+
+.summary-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  width: 100%;
+}
+
+.summary-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-header-row h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #062974;
+}
+
+.summary-header{
+  color:#062974
+}
+
+.tag {
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+.tag.positive { background: #dcfce7; color: #15803d; }
+.tag.negative { background: #fee2e2; color: #b91c1c; }
+.tag.neutral { background: #e0e7ff; color: #3730a3; }
+
+ul {
+  margin: 0.8rem 0;
+  padding-left: 1.5rem;
+}
+
+.detailed-view {
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  border: 1px solid #e5e7eb;
+}
+
+/* Action Buttons */
+.actions-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+.btn.green { background: #22c55e; color: white; }
+.btn.blue { background: #2563eb; color: white; }
+.btn.orange { background: #f97316; color: white; }
+.btn.gray { background: #e5e7eb; color: #374151; }
+
+/* Quick Actions */
+.quick-actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.quick-actions button {
+  background: #09090a;
+  border: 1px solid #d1d5db;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}

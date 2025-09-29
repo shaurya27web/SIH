@@ -1,0 +1,50 @@
+.system-status-dashboard {
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+.update-progress {
+  margin: 15px 0;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.progress {
+  height: 100%;
+  background: #3498db;
+}
+
+.status-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  position: relative;
+}
+
+.status-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #fff;
+}
+
+.status-badge.resolved { background: #2ecc71; }
+.status-badge.ongoing { background: #f1c40f; color: #000; }
+.status-badge.rejected { background: #e74c3c; }

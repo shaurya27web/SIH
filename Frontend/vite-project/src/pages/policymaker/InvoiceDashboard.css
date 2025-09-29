@@ -1,0 +1,67 @@
+.invoice-dashboard {
+  padding: 2rem;
+  background: #f9fafb;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Summary Cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 1.5rem;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: bold;
+}
+.card.green { background: #22c55e; }
+.card.yellow { background: #facc15; }
+.card.red { background: #ef4444; }
+.card.blue { background: #2563eb; }
+
+/* Table */
+.table-container {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.status {
+  padding: 0.3rem 0.7rem;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.status.paid { background: #dcfce7; color: #15803d; }
+.status.pending { background: #fef9c3; color: #b45309; }
+.status.overdue { background: #fee2e2; color: #b91c1c; }
+
+.btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 6px;
+  margin-right: 0.4rem;
+  cursor: pointer;
+}
+.btn.secondary { background: #e5e7eb; color: #374151; }
+.btn.view { background: #22c55e; color: #fff; }
+.btn.pay { background: #2563eb; color: #fff; }
+.btn.share { background: #a855f7; color: #fff; }
